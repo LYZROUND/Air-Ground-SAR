@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/mzh/aerial_autonomy_development_environment/devel/lib/python3/dist-packages",
+        "/home/mzh/cxr_fuel_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/mzh/aerial_autonomy_development_environment/devel/lib/python3/dist-packages",
+        "/home/mzh/cxr_fuel_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
