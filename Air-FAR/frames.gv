@@ -1,0 +1,16 @@
+digraph G {
+"base_link" -> "livox"[label="Broadcaster: /livox_tf_publisher\nAverage rate: 83.581 Hz\nMost recent transform: 558.146 ( -0.002 sec old)\nBuffer length: 4.044 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /odomTransPublisher\nAverage rate: 10.256 Hz\nMost recent transform: 558.188 ( -0.044 sec old)\nBuffer length: 3.900 sec\n"];
+"map" -> "map_ned"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 558.144 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "odom_ned"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 558.144 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base_link_frd"[label="Broadcaster: /mavros\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 558.144 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "track_point"[label="Broadcaster: /pathFollower\nAverage rate: 15.250 Hz\nMost recent transform: 558.132 ( 0.012 sec old)\nBuffer length: 4.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 558.144"[ shape=plaintext ] ;
+ }->"map";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 558.144"[ shape=plaintext ] ;
+ }->"odom";
+}
