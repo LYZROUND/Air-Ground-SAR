@@ -1,0 +1,5 @@
+<launch>
+  <group ns="ugv">
+  <node pkg="sensor_scan_generation" type="sensorScanGeneration" name="sensorScanGeneration" output="screen" required="true"/>
+  </group>
+</launch>
