@@ -1,0 +1,81 @@
+<sdf version='1.6'>
+  <model name='mid360'>
+    <link name='livox_base'>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.02</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.02</iyy>
+          <iyz>0</iyz>
+          <izz>0.02</izz>
+        </inertia>
+      </inertial>
+      <collision name='livox_base_collision'>
+        <!--pose frame=''>0 0 0 0 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mid360/meshes/livox_mid40.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='livox_base_visual'>
+        <!--pose frame=''>0 0 0 0 -0 0</pose-->
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://mid360/meshes/livox_mid-360-90x.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <sensor name='laser_livox' type='ray'>
+        <pose>0 0 0.05 0 0 0</pose>
+        <visualize>1</visualize>
+        <update_rate>10</update_rate>
+        <always_on>1</always_on>
+        <plugin name='gazebo_ros_laser_controller' filename='liblivox_laser_simulation.so'>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>100</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.57</min_angle>
+                <max_angle>1.57</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>100</samples>
+                <resolution>1</resolution>
+                <min_angle>-1</min_angle>
+                <max_angle>1</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.1</min>
+              <max>50.0</max>
+              <resolution>1</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </ray>
+          <visualize>1</visualize>
+          <samples>20000</samples>
+          <downsample>1</downsample>
+          <csv_file_name>mid360.csv</csv_file_name>
+          <publish_pointcloud_type>2</publish_pointcloud_type>
+          <ros_topic>/scan</ros_topic>
+          <frameName>livox</frameName>
+        </plugin>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+      </sensor>
+    </link>
+  </model>
+</sdf>
