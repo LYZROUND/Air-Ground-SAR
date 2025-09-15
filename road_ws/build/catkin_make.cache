@@ -1,0 +1,2 @@
+direct_lidar_inertial_odometry:livox_ros_driver2:road_seg
+-DCATKIN_DEVEL_PREFIX=/docker-ros/air_ground/devel -DCMAKE_INSTALL_PREFIX=/docker-ros/air_ground/install -G Unix Makefiles

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /docker-ros/air_ground/devel/setup.sh
