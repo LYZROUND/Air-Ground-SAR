@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/mzh/cxr_fuel_ws/devel/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/active_perception/include/**",
+        "/home/mzh/cxr_fuel_ws/src/air_ground/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/bspline/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/bspline_opt/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/exploration_manager/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/utils/lkh_tsp_solver/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/local_sensing/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/Utils/multi_map_server/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/path_searching/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/plan_env/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/plan_manage/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/poly_traj/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/Utils/pose_utils/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/home/mzh/Air_Ground_ws/src/scout_simulator/scout_gazebo_sim/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/so3_control/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/so3_disturbance_generator/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/fuel_planner/traj_utils/include/**",
+        "/home/mzh/cxr_fuel_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/mzh/cxr_fuel_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/home/mzh/cxr_fuel_ws/src/turtlebot3/turtlebot3_slam/include/**",
+        "/home/mzh/cxr_fuel_ws/src/FUEL/uav_simulator/Utils/uav_utils/include/**",
+        "/home/mzh/Air_Ground_ws/src/scout_simulator/velodyne_simulator/velodyne_gazebo_plugins/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
